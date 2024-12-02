@@ -83,7 +83,7 @@ def export_data():
         messagebox.showerror("오류", "저장된 데이터가 없습니다.")
         return
 
-    filename = "scores.csv"
+    filename = "evaluation_scores/scores.csv"
     data.to_csv(filename, index=False, encoding='utf-8-sig')
     messagebox.showinfo("성공", f"데이터가 '{filename}' 파일로 저장되었습니다.")
 
